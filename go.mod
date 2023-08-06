@@ -1,4 +1,4 @@
-module example.com/go-mux
+module mux
 
 go 1.20
 
