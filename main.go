@@ -37,7 +37,7 @@ func aboutHandler(w http.ResponseWriter, r *http.Request) {
 func userHandler(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	username := vars["username"]
-	fmt.Fprintf(w, "Hi %s! Welcome to your user page.", username)
+	fmt.Fprintf(w, "Hi %s! Welcome to your user page", username)
 }
 
 // Middleware
