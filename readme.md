@@ -2,7 +2,7 @@
 
 This is a basic Go application using the Gorilla Mux router. It provides an extensible structure for building web applications and APIs in Go.
 
-# Fiber Example
+# Go Mux Railway Starter App Example
 
 This example starts a [Fiber](https://gofiber.io/) server.
 
