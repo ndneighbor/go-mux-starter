@@ -1,14 +1,6 @@
 # Go Mux Starter Application
 
 This is a basic Go application using the Gorilla Mux router. It provides an extensible structure for building web applications and APIs in Go.
-
-# Go Mux Railway Starter App Example
-
-This example starts a [Fiber](https://gofiber.io/) server.
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/Fx4u79?referralCode=VxaV3q)
-
-
 ## Features
 
 - **Modular Structure**: Organized code to make it easy to understand and extend.
@@ -17,23 +9,7 @@ This example starts a [Fiber](https://gofiber.io/) server.
 - **Error Handling**: Graceful handling of errors (can be extended based on application needs).
 
 ## How to Use
-
-1. **Prerequisites**:
-    - Ensure you have Go installed on your machine. 
-    - Install the required package using `go get -u github.com/gorilla/mux`.
-
-2. **Clone the Repository**:
-    ```bash
-    git clone <repository_url>
-    cd <repository_directory>
-    ```
-
-3. **Run the Application**:
-    ```bash
-    go run main.go
-    ```
-
-4. **Access the Application**:
+1. **Access the Application**:
    - Open a browser or use a tool like `curl` to navigate to:
      - `http://localhost:8080/`
      - `http://localhost:8080/about`
