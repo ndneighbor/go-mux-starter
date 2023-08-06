@@ -6,7 +6,7 @@ This is a basic Go application using the Gorilla Mux router. It provides an exte
 
 This example starts a [Fiber](https://gofiber.io/) server.
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/Fx4u79?referralCode=VxaV3q)
 
 
 ## Features

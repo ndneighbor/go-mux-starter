@@ -21,8 +21,8 @@ func main() {
 
 	// Start the server
 	http.Handle("/", r)
-	fmt.Println("Server started at :8080")
-	log.Fatal(http.ListenAndServe(":8080", r))
+	fmt.Println("Server started at :3000")
+	log.Fatal(http.ListenAndServe(":3000", r))
 }
 
 // Handlers
