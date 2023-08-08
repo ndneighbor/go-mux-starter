@@ -6,11 +6,28 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
+	"github.com/rs/cors"
 )
+
+func DomainHandler(w http.ResponseWriter, r *http.Request) {
+	w.WriteHeader(http.StatusOK)
+	fmt.Fprint(w, "Hello from your handler!")
+}
 
 func main() {
 	r := mux.NewRouter()
 
+	r.HandleFunc("/", DomainHandler)
+
+	c := cors.New(cors.Options{
+		AllowedOrigins:   []string{"https://go-mux-railway-app-starter-production.up.railway.app/"},
+		AllowCredentials: true,
+		AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE"},
+		AllowedHeaders:   []string{"Authorization", "Content-Type"},
+	})
+
+	handler := c.Handler(r)
+	http.Handle("/", handler)
 	// Middleware
 	r.Use(loggingMiddleware)
 
