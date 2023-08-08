@@ -22,6 +22,7 @@ func main() {
 	// Start the server
 	http.Handle("/", r)
 	fmt.Println("Server started at :8080")
+	http.ListenAndServe(":8080", r)
 	log.Fatal(http.ListenAndServe(":8080", r))
 }
 
